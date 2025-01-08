@@ -1,5 +1,5 @@
-FROM node:20-alpine3.19 AS node-alpine
-FROM golang:1.22.2-alpine3.19 AS go-alpine
+FROM docker.io/node:20-alpine3.19 AS node-alpine
+FROM docker.io/golang:1.22.2-alpine3.19 AS go-alpine
 
 # ------ Build Zoekt ------
 FROM go-alpine AS zoekt-builder
