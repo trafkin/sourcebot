@@ -16,8 +16,8 @@ ARG NEXT_PUBLIC_SENTRY_BACKEND_DSN
 ARG NEXT_PUBLIC_LANGFUSE_PUBLIC_KEY
 ARG NEXT_PUBLIC_LANGFUSE_BASE_URL
 
-FROM node:20-alpine3.19 AS node-alpine
-FROM golang:1.23.4-alpine3.19 AS go-alpine
+FROM docker.io/node:20-alpine3.19 AS node-alpine
+FROM docker.io/golang:1.23.4-alpine3.19 AS go-alpine
 # ----------------------------------
 
 # ------ Build Zoekt ------
